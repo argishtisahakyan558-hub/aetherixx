@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aetherixx — Вход</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <main class="auth-page">
+        <form class="auth-card" id="loginForm">
+            <a href="index.html" class="logo">Aetherixx</a>
+            <h1>Войти</h1>
+            <p class="description">Продолжите работу со своими заметками и задачами.</p>
+            <label>Логин</label>
+            <input type="text" id="email" placeholder="Введите логин">
+
+            <label>Пароль</label>
+            <input type="password" id="password" placeholder="Введите пароль">
+
+            <p class="error" id="errorMessage"></p>
+
+            <button type="submit">Войти</button>
+
+            <p class="bottom-text">
+                Нет аккаунта? <a href="register.html">Зарегистрироваться</a>
+            </p>
+        </form>
+    </main>
+
+    <script src="/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aetherixx — Регистрация</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <main class="auth-page">
+        <form class="auth-card" id="registerForm">
+            <a href="index.html" class="logo">Aetherixx</a>
+            <h1>Создать аккаунт</h1>
+            <p class="description">Настройте пространство для учебы, проектов и заметок.</p>
+
+            <label>Имя</label>
+            <input type="text" id="name" placeholder="Ваше имя">
+
+            <label>Логин</label>
+            <input type="text" id="email" placeholder="Придумайте логин">
+
+            <label>Пароль</label>
+            <input type="password" id="password" placeholder="Придумайте пароль">
+
+            <label>Цель использования</label>
+            <select id="goal">
+                <option value="">Выберите цель</option>
+                <option value="Учёба">Учёба</option>
+                <option value="Проекты">Проекты</option>
+                <option value="Заметки">Заметки</option>
+            </select>
+
+            <p class="error" id="errorMessage"></p>
+
+            <button type="submit">Создать аккаунт</button>
+
+            <p class="bottom-text">
+                Уже есть аккаунт? <a href="login.html">Войти</a>
+            </p>
+        </form>
+    </main>
+
+    <script src="/js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aetherixx — Задачи</title>
+    <link rel="stylesheet" href="/css/tasks.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <a href="index.html" class="logo">Aetherixx</a>
+            <nav class="menu">
+                <a href="workspace.html">Главная</a>
+                <a href="notes.html">Заметки</a>
+                <a class="active" href="tasks.html">Задачи</a>
+                <a href="projects.html">Проекты</a>
+            </nav>
+            <button class="theme-button" id="themeButton">Сменить тему</button>
+        </aside>
+
+        <main class="content">
+            <header class="topbar">
+                <div>
+                    <p class="muted">Рабочее пространство</p>
+                    <h1>Задачи</h1>
+                </div>
+                <a href="login.html" class="logout" id="logoutButton">Выйти</a>
+            </header>
+
+            <section class="page-grid">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2>Список задач</h2>
+                    </div>
+                    <div class="task-form">
+                        <input type="text" id="taskInput" placeholder="Новая задача...">
+                        <button id="addTaskButton">Добавить</button>
+                    </div>
+                    <ul class="list task-list" id="taskList"></ul>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2>Статистика</h2>
+                    </div>
+                    <div class="card accent">
+                        <p>Всего задач</p>
+                        <h2 id="taskCount">0</h2>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="/js/tasks.js"></script>
+</body>
+</html>

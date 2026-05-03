@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aetherixx — Главная</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <!-- Верхняя навигация сайта -->
+    <header class="header">
+        <a href="index.html" class="logo">Aetherixx</a>
+
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="login.html">Войти</a>
+            <a href="register.html" class="nav-button">Регистрация</a>
+        </nav>
+    </header>
+
+    <!-- Главный hero-блок -->
+    <main class="hero">
+        <section class="hero-text">
+            <p class="badge">Цифровое пространство для порядка</p>
+            <h1>Организуй идеи, задачи и заметки в одном месте</h1>
+            <p class="subtitle">
+                Aetherixx — простое цифровое пространство для учебы, проектов и личной продуктивности.
+            </p>
+
+            <div class="hero-actions">
+                <a href="register.html" class="btn primary">Начать</a>
+                <a href="login.html" class="btn secondary">Войти</a>
+            </div>
+        </section>
+
+        <!-- Декоративный макет рабочего пространства -->
+        <section class="workspace-preview">
+            <div class="preview-window">
+                <aside class="preview-sidebar">
+                    <div class="sidebar-dot"></div>
+                    <p>Workspace</p>
+                    <span>Заметки</span>
+                    <span>Задачи</span>
+                    <span>Проекты</span>
+                    <span>Календарь</span>
+                </aside>
+
+                <div class="preview-content">
+                    <div class="preview-top">
+                        <div>
+                            <p class="small-text">Сегодня</p>
+                            <h3>План учебы</h3>
+                        </div>
+                        <button>+</button>
+                    </div>
+
+                    <div class="preview-grid">
+                        <div class="preview-card large">
+                            <p>Заметка</p>
+                            <h4>Идеи для проекта</h4>
+                            <span></span>
+                            <span class="short"></span>
+                        </div>
+
+                        <div class="preview-card">
+                            <p>Задачи</p>
+                            <h4>3 активные</h4>
+                            <ul>
+                                <li>Конспект</li>
+                                <li>Макет</li>
+                            </ul>
+                        </div>
+
+                        <div class="preview-card calendar">
+                            <p>Календарь</p>
+                            <div class="calendar-row">
+                                <b>12</b><b>13</b><b>14</b>
+                            </div>
+                        </div>
+
+                        <div class="preview-card accent">
+                            <p>Фокус</p>
+                            <h4>90 минут</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>

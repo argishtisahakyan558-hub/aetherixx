@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f8f8fb;
+    color: #171717;
+}
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.auth-card {
+    width: 430px;
+    background: white;
+    border: 1px solid #e7e7ee;
+    border-radius: 28px;
+    padding: 38px;
+    box-shadow: 0 25px 60px rgba(32, 32, 64, 0.10);
+}
+
+.logo {
+    display: inline-block;
+    color: #171717;
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+    margin-bottom: 34px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 28px;
+}
+
+label {
+    display: block;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 18px;
+    border: 1px solid #dedee8;
+    border-radius: 14px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 4px #eeeeff;
+}
+
+.error {
+    color: #d94a4a;
+    min-height: 22px;
+    margin-bottom: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-radius: 16px;
+    background: #171717;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #6c63ff;
+    transform: translateY(-2px);
+}
+
+.bottom-text {
+    margin-top: 24px;
+    color: #666;
+    text-align: center;
+}
+
+.bottom-text a {
+    color: #6c63ff;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+/* Плавная анимация появления, как на главной странице */
+.auth-page {
+    animation: pageFade 0.45s ease both;
+}
+
+.auth-card {
+    animation: cardUp 0.7s ease both;
+}
+
+.demo-hint {
+    display: inline-block;
+    margin-bottom: 22px;
+    padding: 10px 14px;
+    border-radius: 14px;
+    background: #f0efff;
+    color: #5b55d8;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.demo-hint b {
+    font-weight: 900;
+}
+
+@keyframes pageFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes cardUp {
+    from {
+        opacity: 0;
+        transform: translateY(28px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

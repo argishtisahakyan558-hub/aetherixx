@@ -1,0 +1,415 @@
+/* Подключаем современный шрифт Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* Общие настройки страницы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f8f8fb;
+    color: #171717;
+}
+
+/* Навигация */
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 28px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #171717;
+    letter-spacing: -1px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.nav a:hover {
+    color: #6c63ff;
+}
+
+.nav-button {
+    padding: 12px 20px;
+    border: 1px solid #dedee8;
+    border-radius: 16px;
+    background: white;
+}
+
+/* Главный блок */
+.hero {
+    max-width: 1440px;
+    min-height: calc(100vh - 100px);
+    margin: 0 auto;
+    padding: 45px 48px 70px;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 11px 18px;
+    background: #eeeeff;
+    color: #5b55d8;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    margin-bottom: 28px;
+}
+
+.hero-text h1 {
+    max-width: 860px;
+    font-size: 96px;
+    line-height: 0.95;
+    font-weight: 900;
+    letter-spacing: -6px;
+    margin-bottom: 32px;
+}
+
+.subtitle {
+    max-width: 660px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #626876;
+    line-height: 1.55;
+    margin-bottom: 42px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 18px;
+}
+
+.btn {
+    padding: 18px 30px;
+    border-radius: 18px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 800;
+    transition: 0.2s;
+}
+
+.primary {
+    background: #171717;
+    color: white;
+}
+
+.primary:hover {
+    background: #6c63ff;
+    transform: translateY(-3px);
+}
+
+.secondary {
+    background: white;
+    color: #171717;
+    border: 1px solid #dedee8;
+}
+
+.secondary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Макет рабочего пространства справа */
+.workspace-preview {
+    display: flex;
+    justify-content: center;
+}
+
+.preview-window {
+    width: 620px;
+    height: 520px;
+    background: white;
+    border: 1px solid #e7e7ee;
+    border-radius: 34px;
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(32, 32, 64, 0.12);
+}
+
+.preview-sidebar {
+    background: #f3f3f7;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sidebar-dot {
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(135deg, #6c63ff, #9c8cff);
+    border-radius: 14px;
+}
+
+.preview-sidebar p {
+    font-size: 17px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.preview-sidebar span {
+    color: #666;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.preview-sidebar span:hover {
+    background: white;
+}
+
+.preview-content {
+    padding: 30px;
+}
+
+.preview-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.small-text,
+.preview-card p {
+    color: #888;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.preview-top h3 {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.preview-top button {
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 15px;
+    background: #171717;
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.preview-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 16px;
+}
+
+.preview-card {
+    min-height: 130px;
+    padding: 20px;
+    border: 1px solid #ececf2;
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.preview-card.large {
+    grid-row: span 2;
+}
+
+.preview-card h4 {
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    margin-bottom: 18px;
+}
+
+.preview-card span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background: #eeeef5;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.preview-card span.short {
+    width: 70%;
+}
+
+.preview-card ul {
+    list-style: none;
+    color: #555;
+    font-weight: 700;
+    line-height: 1.8;
+}
+
+.calendar-row {
+    display: flex;
+    gap: 10px;
+}
+
+.calendar-row b {
+    padding: 12px;
+    background: #f4f4f8;
+    border-radius: 14px;
+    font-weight: 900;
+}
+
+.accent {
+    background: #f0efff;
+    border-color: #dddbff;
+}
+
+/* Адаптация под маленькие экраны */
+@media (max-width: 1100px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text h1 {
+        font-size: 72px;
+    }
+
+    .preview-window {
+        width: 100%;
+        max-width: 620px;
+    }
+}
+
+@media (max-width: 650px) {
+    .header {
+        padding: 24px;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .hero {
+        padding: 30px 24px 50px;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+        letter-spacing: -3px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .preview-window {
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .header {
+        height: 92px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+
+    .hero {
+        height: calc(100vh - 92px);
+        min-height: 0;
+        padding-top: 18px;
+        padding-bottom: 34px;
+        gap: 52px;
+    }
+
+    .badge {
+        margin-bottom: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(72px, 5vw, 96px);
+        line-height: 0.94;
+        margin-bottom: 24px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+        line-height: 1.45;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        padding: 16px 28px;
+    }
+
+    .preview-window {
+        width: 560px;
+        height: 470px;
+        grid-template-columns: 155px 1fr;
+    }
+
+    .preview-sidebar {
+        padding: 24px;
+        gap: 13px;
+    }
+
+    .preview-content {
+        padding: 26px;
+    }
+
+    .preview-card {
+        min-height: 112px;
+        padding: 18px;
+    }
+}
+
+.hero-text {
+    animation: smoothUp 0.75s ease both;
+}
+
+.workspace-preview {
+    animation: smoothUp 0.85s ease both;
+    animation-delay: 0.12s;
+}
+
+@keyframes smoothUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

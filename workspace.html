@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aetherixx — Рабочее пространство</title>
+    <link rel="stylesheet" href="/css/workspace.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <a href="index.html" class="logo">Aetherixx</a>
+            <nav class="menu">
+                <a class="active" href="workspace.html">Главная</a>
+                <a href="notes.html">Заметки</a>
+                <a href="tasks.html">Задачи</a>
+                <a href="projects.html">Проекты</a>
+            </nav>
+            <button class="theme-button" id="themeButton">Сменить тему</button>
+        </aside>
+
+        <main class="content">
+            <header class="topbar">
+                <div>
+                    <p class="muted">Рабочее пространство</p>
+                    <h1 id="helloTitle">Привет!</h1>
+                </div>
+                <a href="login.html" class="logout" id="logoutButton">Выйти</a>
+            </header>
+
+            <section class="cards">
+                <a class="card" href="notes.html">
+                    <p>Заметки</p>
+                    <h2 id="notesCount">0</h2>
+                </a>
+                <a class="card" href="tasks.html">
+                    <p>Задачи</p>
+                    <h2 id="taskCount">0</h2>
+                </a>
+                <a class="card" href="projects.html">
+                    <p>Проекты</p>
+                    <h2 id="projectsCount">0</h2>
+                </a>
+            </section>
+
+            <section class="workspace-grid">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2>Задачи</h2>
+                    </div>
+
+                    <div class="task-form">
+                        <input type="text" id="taskInput" placeholder="Новая задача...">
+                        <button id="addTaskButton">Добавить</button>
+                    </div>
+
+                    <ul class="task-list" id="taskList"></ul>
+                </div>
+
+                <div class="panel notes-panel">
+                    <div class="panel-header">
+                        <h2>Быстрые заметки</h2>
+                        <span>Мини-блокнот</span>
+                    </div>
+
+                    <textarea id="quickNotes" placeholder="Запишите идею, мысль или план..."></textarea>
+
+                    <div class="activity-mini">
+                        <div class="activity-mini-header">
+                            <span class="activity-mini-title">Активность за неделю</span>
+                            <div class="activity-mini-legend">
+                                <i class="mini-dot dot-tasks" title="Задачи"></i>
+                                <i class="mini-dot dot-notes" title="Заметки"></i>
+                                <i class="mini-dot dot-projects" title="Проекты"></i>
+                            </div>
+                        </div>
+                        <div class="activity-week" id="activityWeek"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/js/workspace.js"></script>
+</body>
+</html>

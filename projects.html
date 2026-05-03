@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aetherixx — Проекты</title>
+    <link rel="stylesheet" href="/css/projects.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <a href="index.html" class="logo">Aetherixx</a>
+            <nav class="menu">
+                <a href="workspace.html">Главная</a>
+                <a href="notes.html">Заметки</a>
+                <a href="tasks.html">Задачи</a>
+                <a class="active" href="projects.html">Проекты</a>
+            </nav>
+            <button class="theme-button" id="themeButton">Сменить тему</button>
+        </aside>
+
+        <main class="content">
+            <header class="topbar">
+                <div>
+                    <p class="muted">Рабочее пространство</p>
+                    <h1>Проекты</h1>
+                </div>
+                <a href="login.html" class="logout" id="logoutButton">Выйти</a>
+            </header>
+
+            <section class="page-grid">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2>Мои проекты</h2>
+                    </div>
+                    <div class="list" id="projectList"></div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2>Новый проект</h2>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" id="projectInput" placeholder="Название проекта">
+                        <button id="addProjectButton">Добавить</button>
+                    </div>
+                    <textarea id="projectText" placeholder="Описание проекта"></textarea>
+                    <div class="progress-create">
+                        <label for="projectProgress">Прогресс: <b id="progressValue">10%</b></label>
+                        <input type="range" id="projectProgress" min="0" max="100" value="10">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="/js/projects.js"></script>
+</body>
+</html>
